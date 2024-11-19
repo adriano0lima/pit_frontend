@@ -1,0 +1,207 @@
+/* Variáveis de cor */
+:root {
+    --cor-laranja: #FF5F00;
+    --cor-vermelho: #B20600;
+    --cor-azul: #00092C;
+    --cor-cinza: #EEEEEE;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-cinza);
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Estilo do header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--cor-azul);
+    color: white;
+    width: 100%; /* Garante que o header ocupe a largura inteira da tela */
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 15px;
+}
+
+button {
+    background-color: var(--cor-laranja);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-vermelho);
+}
+
+.auth-container {
+    margin-top: 5%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 415px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid var(--cor-azul);
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: var(--cor-vermelho);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--cor-laranja);
+}
+
+/* Botão Voltar */
+#backButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--cor-azul);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#backButton:hover {
+    background-color: var(--cor-laranja);
+}
+
+/* Container de produtos (apenas na página inicial) */
+#productContainer {
+    text-align: center;
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 80%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: var(--cor-azul);
+}
+
+.card p {
+    color: var(--cor-vermelho);
+}
+
+.card button {
+    background-color: var(--cor-laranja);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card button:hover {
+    background-color: var(--cor-vermelho);
+}
+
+/* Filtro por Categoria (apenas na página inicial) */
+#categoryFilter {
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a tabela do carrinho */
+#tabelaCarrinho {
+    width: 80%; /* Ajuste a largura da tabela */
+    margin-top: 30px; /* Espaço entre o header e a tabela */
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 30px; /* Espaçamento inferior para separar da parte de baixo da página */
+    margin-left: auto; /* Garante a centralização */
+    margin-right: auto; /* Garante a centralização */
+}
+
+#tabelaCarrinho th, #tabelaCarrinho td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#tabelaCarrinho th {
+    background-color: var(--cor-azul);
+    color: white;
+}
+
+#tabelaCarrinho tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para o botão de finalizar compra */
+.btn-finalizar {
+    width: 150px;
+    height: 45px;
+    background-color: var(--cor-laranja);
+    color: white;
+    border: none;
+    border-radius: 25px; /* Cantos arredondados */
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-finalizar:hover {
+    background-color: var(--cor-vermelho);
+}
